@@ -1,6 +1,6 @@
 /* SQL Project: SQL Data Exploration.
-Data Source: Our_World_In_Data.
-Data Name: "Covid Deaths". 
+Dataset Source: Our_World_In_Data.
+Dataset Name: "Covid Deaths". 
 Project Description: Writing queries to explore data.*/
 
 Select *
