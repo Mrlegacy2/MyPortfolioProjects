@@ -1,6 +1,6 @@
 /* SQL Project: Solving Twenty(20) different problems with SQL from a real Dataset.
-Data Source: Kaggle.
-Data Name: "120 Years Of Olympique History". 
+Dataset Source: Kaggle.
+Dataset Name: "120 Years Of Olympique History". 
 Project Description: Writing queries to analize data and answer questions.*/
 
 select *
