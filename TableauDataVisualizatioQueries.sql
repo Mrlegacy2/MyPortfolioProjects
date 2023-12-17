@@ -46,12 +46,18 @@ From Percent_Of_Pop_Infected
 --> 4. Creating View for percentage of population infected/Percentage of infection count over time for each country.
 Create View Percent_Of_Pop_Infected_Ov_Time As
 	(
-	 Select Location, Date, Population, Sum(New_Cases) as High_Cases_Count, 
-	 Round((Sum(New_Cases)::numeric/Population::numeric)*100, 11) as Percent_Of_Pop_Infected
-	 from Covid_Deaths
-	 Where Continent is not null
-	 Group by Location, Population, Date
-	 Order by 1, 5 desc	
+	 With t1 As
+		 (Select Location, Date, Population, Sum(Total_Cases) as High_Cases_Count, 
+		 Round((Sum(Total_Cases)::numeric/Population::numeric)*100, 11) as Percent_Of_Pop_Infected
+		 from Covid_Deaths
+		 Where Continent is not null
+		 Group by Location, Population, Date
+		 ),
+	 t2 As
+		(Select Location, Date, Population, Coalesce(High_Cases_Count, 0) as High_Cases_Count, 
+		 Coalesce(Percent_Of_Pop_Infected, 0) as Percent_Of_Pop_Infected
+		 From t1) 
+select * from t2 order by 5 desc	
 	)
 Select *
 From Percent_Of_Pop_Infected_Ov_Time
