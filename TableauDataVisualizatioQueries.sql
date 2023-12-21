@@ -1,5 +1,6 @@
 /* Creating Views Off Of My Covid_Deaths Data Exploration Project, 
-For Later Visualizations In Tableau. */
+For Later Visualizations In Tableau. 
+RDMS: POSTGRESQL.*/
 
 --> 1. Creating view for global total cases, deaths and death percentage
 Create View Overall_Cases_Deaths_DeathPercent As
