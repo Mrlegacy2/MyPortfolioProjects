@@ -1,7 +1,8 @@
 /* SQL Project: Solving Twenty(20) different problems with SQL from a real Dataset.
 Dataset Source: Kaggle.
 Dataset Name: "120 Years Of Olympique History". 
-Project Description: Writing queries to analize data and answer questions.*/
+Project Description: Writing queries to analize data and answer questions.
+RDBMS: POSTGRESQL. */
 
 select *
 from Athlete_Events_History
