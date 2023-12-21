@@ -1,7 +1,8 @@
 /* SQL Project: SQL Data Exploration.
 Dataset Source: Our_World_In_Data.
 Dataset Name: "Covid Deaths". 
-Project Description: Writing queries to explore data.*/
+Project Description: Writing queries to explore data.
+RDBMS: POSTGRESQL. */
 
 Select *
 from Covid_Deaths
