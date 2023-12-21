@@ -2,7 +2,7 @@
 Data Source: Unknow.
 Dataset Name: Nashville Housing Data.
 Project Description: Writing queries to clean, standardize, and correct errors in data. 
-RDMS: SQL SERVER*/
+RDBMS: SQL SERVER*/
 
 Select *
 From NashvilleHousing
